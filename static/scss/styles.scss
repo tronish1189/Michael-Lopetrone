@@ -64,14 +64,13 @@ h1 {
 }
 
 .arrow {
-  transform: rotate(226deg);
   display: inline-block;
-  height: 42px;
-  width: 40px;
   font-style: normal !important;
+  height: 43px;
+  left: -1px;
   position: relative;
-  left: -8px;
-  font-family: "Zapf Dingbats";
+  transform: rotate(135deg);
+  width: 35px;
 }
 
 .container {
