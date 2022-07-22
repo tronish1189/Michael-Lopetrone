@@ -1,0 +1,204 @@
+// // Include Bootstrap functions
+// @import "../../node_modules/bootstrap/scss/functions";
+
+// Override default variables here
+$primary: red;
+$secondary: orange;
+$success: blue;
+$c-grey: #707070;
+
+// // Include remainder of required Bootstrap stylesheets
+// @import "../../node_modules/bootstrap/scss/variables";
+
+// // Include any optional Bootstrap CSS as needed
+// @import "../../node_modules/bootstrap/scss/maps";
+// @import "../../node_modules/bootstrap/scss/mixins";
+// @import "../../node_modules/bootstrap/scss/utilities";
+// @import "../../node_modules/bootstrap/scss/root";
+// @import "../../node_modules/bootstrap/scss/reboot";
+// @import "../../node_modules/bootstrap/scss/type";
+// @import "../../node_modules/bootstrap/scss/images";
+// @import "../../node_modules/bootstrap/scss/containers";
+// @import "../../node_modules/bootstrap/scss/grid";
+// @import "../../node_modules/bootstrap/scss/helpers";
+
+// // Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// @import "../../node_modules/bootstrap/scss/utilities/api";
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+body {
+  background-color: #d5e6e6;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+}
+
+.link {
+  color: black;
+  font-size: 2rem;
+
+  &:hover {
+    font-style: italic;
+  }
+}
+
+.arrow {
+  transform: rotate(226deg);
+  display: inline-block;
+  height: 42px;
+  width: 40px;
+  font-style: normal !important;
+  position: relative;
+  left: -8px;
+}
+
+.container {
+  width: 95%;
+  display: flex;
+  margin: 2rem auto 2rem auto;
+
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+  }
+}
+
+.main-content {
+  width: 60%;
+  border: 1px solid $c-grey;
+  position: relative;
+  padding: 8px 8px 0px 8px;
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+}
+
+.site-title {
+  font-size: 4.5rem;
+  text-transform: uppercase;
+
+  @media (max-width: 600px) {
+    font-size: 3rem;
+  }
+}
+
+.site-subtitle {
+  position: absolute;
+  top: 95px;
+  font-size: 2rem;
+  text-transform: initial;
+  left: 500px;
+
+  @media (max-width: 600px) {
+    display: block;
+    position: static;
+  }
+}
+
+.link-wrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  @media (max-width: 600px) {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+}
+
+.link-icon {
+  position: relative;
+  text-decoration: none;
+  display: inline-block;
+
+  &__text {
+    bottom: 5px;
+    color: #000;
+    position: relative;
+    font-size: 2rem;
+  }
+
+  &__icon {
+    width: 50px;
+  }
+
+  &:hover &__text {
+    font-style: italic;
+  }
+
+  &:hover &__icon {
+    transform: skew(-8deg);
+  }
+}
+
+.image-wrapper {
+  width: 40%;
+  border: 1px solid $c-grey;
+  border-left: none;
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 100%;
+    height: 565px;
+    object-fit: contain;
+    object-fit: contain;
+  }
+
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.featured-text {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+.contact-box {
+  border-top: 1px solid $c-grey;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -8px;
+  padding: 8px;
+  font-size: 1.25rem;
+  margin-top: 8px;
+  flex-wrap: wrap;
+  width: 100%;
+
+  &__text {
+    text-transform: uppercase;
+  }
+}
+
+.headshot-mobile {
+  display: none;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  margin-top: 8px;
+
+  @media (max-width: 600px) {
+    display: block;
+  }
+}
